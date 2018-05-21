@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Light Box</title>
+		<meta charset="utf-8"/>
+
+		<style type="text/css">
+		.escuro{
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.6);
+			display: none;
+		}
+
+		.divFoto{
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			width: 500px;
+/*			height: 400px;*/
+			background-color: white;
+			margin-left: -270px;
+			margin-top: -220px;
+			padding: 20px;
+			display: none;
+		}
+		</style>
+
+	</head>
+	<body>
+
+		<a href="#" class="galeria"><img src="imagens\linux.png" border="0" width="150" /></a>
+		<a href="#" class="galeria"><img src="imagens\telegram.png" border="0" width="150" /></a>
+		<a href="#" class="galeria"><img src="imagens\guitar.png" border="0" width="150"/></a>
+
+		<div class="escuro"></div>
+
+		<div class="divFoto">
+			<img src="" border="0" width="100%"/><br/>
+
+			<button>Fechar</button>
+		</div>
+
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="lightBox.js"></script>
+	</body>
+</html>

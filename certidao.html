@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<script type="text/javascript">
+	
+	function tipoCertidao(event)	{
+
+		var modelo = document.getElementsByName('tipo');
+
+		if(modelo[0].checked){
+			document.getElementById('antigo').value = "";
+			document.getElementById('antigo').style.display = "none";
+			document.getElementById('novo').style.display = "block";
+			//alert("voce selecionou o modelo novo");
+
+		}
+
+		else{
+			document.getElementById('novo').value = "";
+			document.getElementById('novo').style.display = "none";
+			document.getElementById('antigo').style.display = "block";
+			//alert("voce selecionou o modelo antigo");
+		}
+
+	}
+
+
+	function formatar(mascara, campo){
+	  var i = campo.value.length;
+	  var saida = mascara.substring(0,1);
+	  var texto = mascara.substring(i);
+	  
+	  if (texto.substring(0,1) != saida){
+	            campo.value += texto.substring(0,1);
+	  }
+
+	}
+
+	</script>
+
+
+</head>
+<body>
+	
+	<div style="float:left;">
+		
+	<table border="2px">
+
+		<td><p><strong>Certidao de Nascimento: </strong></p></td>
+
+		<td id="campo">
+			<input type="radio" name="tipo" value="novo" onchange="tipoCertidao(this)">Modelo novo</input>
+			<input type="radio" name="tipo" value="antigo" onchange="tipoCertidao(this)">Modelo antigo</input>
+
+			<td>
+			<input type="text" id="novo" name="certidao" size="50" maxlength="41" onkeypress="formatar('###### ## ## #### # ##### ### ######## ##', this)" style="display:none;"></input>
+			<input type="text" id="antigo" maxlength="13" name="certidao" onkeypress="formatar('### ### #####', this)" style="display:none;"></input>
+			</td>
+		</td>
+
+
+		</td>
+
+	</table>
+</body>
+</html>

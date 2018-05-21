@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Estourar bolha</title>
+		<style type="text/css">
+		body{margin: 0;}	
+
+		.placar{
+			width: 150px;
+			height: 100px;
+			position: fixed;
+			left: 0;
+			top: 0;
+			background-color: #DDDDDD;
+			text-align: center;
+		}
+
+		#numPlacar{
+			font-size: 50px;
+		}
+
+
+		.bola{
+			width: 30px;
+			height: 30px;
+			border-radius: 25px;
+			background-color: black;
+			position: absolute;
+		}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="placar">
+			Estouradas:<br/>
+			<span id="numPlacar">0</span>
+			<br/>
+			<button id="comecarJogo">Começar</button>
+		</div>
+
+
+		
+
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="estourarBolha.js"></script>
+
+	</body>
+</html>

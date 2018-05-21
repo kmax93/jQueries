@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Menu DropDown</title>
+
+	<style type="text/css">
+
+	body{
+		margin:0;
+	}	
+
+	.menu{
+		height: 40px;
+		background-color: black;
+		color: white;
+	}
+
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li{
+		float: left;
+		padding: 0px 20px;
+		line-height: 40px;
+		cursor: pointer;
+	}
+
+	.menuPrincipal{
+		height: 40px;
+	}
+
+	.subMenu{
+		position: absolute;
+		width: 90px;
+		height: 160px;
+		background-color: black;
+		display: none;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="menu">
+		<ul>
+			<li>
+				<div class="menuPrincipal">Home</div>
+				<div class="subMenu">
+					Opção 1<br/>
+					Opção 2<br/>
+					Opção 3<br/>
+					Opção 4<br/>
+				</div>
+			</li>
+
+			<li>	
+				<div class="menuPrincipal">Menu 1</div>
+				<div class="subMenu">
+					Op1 Menu 1<br/>
+					Op2 Menu 1<br/>
+					Op3 Menu 1<br/>
+					Op4 Menu 1<br/>
+				</div>
+			</li>
+
+						<li>	
+				<div class="menuPrincipal">Menu 2</div>
+				<div class="subMenu">
+					Op1 Menu 2<br/>
+					Op2 Menu 2<br/>
+					Op3 Menu 2<br/>
+					Op4 Menu 2<br/>
+				</div>
+			</li>
+
+
+			<li>	
+				<div class="menuPrincipal">Menu 3</div>
+				<div class="subMenu">
+					Op1 Menu 3<br/>
+					Op2 Menu 3<br/>
+					Op3 Menu 3<br/>
+					Op4 Menu 3<br/>
+				</div>
+			</li>
+
+			<li>	
+				<div class="menuPrincipal">Menu 4</div>
+				<div class="subMenu">
+					Op1 Menu 4<br/>
+					Op2 Menu 4<br/>
+					Op3 Menu 4<br/>
+					Op4 Menu 4<br/>
+				</div>
+			</li>
+
+
+		</ul>	
+	</div>
+
+
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="menuDropDown.js"></script>
+
+</body>
+</html>
